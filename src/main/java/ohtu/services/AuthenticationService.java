@@ -39,7 +39,7 @@ public class AuthenticationService {
         return true;
     }
 
-    private boolean invalid(String username, String password) {
+    private boolean checkForLength(String username, String password) {
         if (username.length() < 3) {
             System.out.println("username must contain atleast 3 chars");
             return true;
@@ -49,22 +49,10 @@ public class AuthenticationService {
             System.out.println("password must contain atleast 8 chars");
             return true;
         }
+        return false;
+    }
 
-        for (int i = 0; i < username.length(); i++) {
-            if (username.charAt(i) < 'a' || username.charAt(i) > 'z') {
-                System.out.println("username can only contain chars a-z");
-                return true;
-            }
-        }
-
-        for (User user : userDao.listAll()) {
-            if (user.getUsername().equals(username)) {
-                {
-                    System.out.println("username already exists");
-                    return true;
-                }
-            }
-        }
+    public boolean checkForAlphaNumerics(String username, String password) {
         boolean passwordHasANumber = false;
         boolean passwordHasANonAlphaNumeric = false;
 
@@ -76,6 +64,24 @@ public class AuthenticationService {
             }
         }
         if (!passwordHasANumber || !passwordHasANonAlphaNumeric) {
+            return false;
+        }
+        return true;
+    }
+
+    private boolean invalid(String username, String password) {
+        if (checkForLength(username, password)) {
+            return true;
+        }
+
+        for (int i = 0; i < username.length(); i++) {
+            if (username.charAt(i) < 'a' || username.charAt(i) > 'z') {
+                System.out.println("username can only contain chars a-z");
+                return true;
+            }
+        }
+
+        if (!checkForAlphaNumerics(username, password)) {
             System.out.println("password must contain atleast one number and one non-alpha-numeric char");
             return true;
         }

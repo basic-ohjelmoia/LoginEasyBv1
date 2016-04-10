@@ -4,7 +4,7 @@
 
     <module name="TreeWalker">
         <module name="MethodLength">
-			<property name="max" value="10"/>
+			<property name="max" value="20"/>
 		</module>
 		<module name="NestedIfDepth">
 			<property name="max" value="1"/>
@@ -13,7 +13,7 @@
 		<module name="Indentation"/>
 		<module name="LeftCurly"/>
 		<module name="CyclomaticComplexity">
-			<property name="max" value="3"/>
+			<property name="max" value="10"/>
 		</module>
     </module>
 

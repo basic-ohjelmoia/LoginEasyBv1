@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="5.5">
 <file name="C:\Users\mikromafia\Documents\GitHub\ohtu2016\viikko3\LoginEasyBv1\src\main\java\ohtu\App.java">
-<error line="28" column="5" severity="error" message="Cyclomatic Complexity is 7 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="28" column="5" severity="error" message="Metodin pituus on 27 riviÃ¤ (suurin sallittu on 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
-<error line="56" column="5" severity="error" message="Metodin pituus on 12 riviÃ¤ (suurin sallittu on 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
-<error line="62" severity="error" message="method def child at indentation level 9 not at correct indentation, 8" source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
 <file name="C:\Users\mikromafia\Documents\GitHub\ohtu2016\viikko3\LoginEasyBv1\src\main\java\ohtu\data_access\InMemoryUserDao.java">
 </file>
@@ -19,9 +15,5 @@
 <file name="C:\Users\mikromafia\Documents\GitHub\ohtu2016\viikko3\LoginEasyBv1\src\main\java\ohtu\io\StubIO.java">
 </file>
 <file name="C:\Users\mikromafia\Documents\GitHub\ohtu2016\viikko3\LoginEasyBv1\src\main\java\ohtu\services\AuthenticationService.java">
-<error line="16" column="5" severity="error" message="Cyclomatic Complexity is 4 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="27" column="5" severity="error" message="Metodin pituus on 14 riviÃ¤ (suurin sallittu on 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
-<error line="42" column="5" severity="error" message="Cyclomatic Complexity is 15 (max allowed is 3)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="42" column="5" severity="error" message="Metodin pituus on 42 riviÃ¤ (suurin sallittu on 10)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
 </file>
 </checkstyle>
