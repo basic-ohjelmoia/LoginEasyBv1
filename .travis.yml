@@ -1,2 +1,4 @@
 language: java
-script: mvn jxr:jxr checkstyle:checkstyle
+script:
+ - mvn jxr:jxr checkstyle:checkstyle
+ - mvn integration-test
