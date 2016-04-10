@@ -28,7 +28,6 @@ public class App {
     public void run() {
         while (true) {
             String command = io.readLine(">");
-
             if (command.isEmpty()) {
                 break;
             }
@@ -36,6 +35,7 @@ public class App {
             if (command.equals("new") && (auth.createUser(usernameAndPasword[0], usernameAndPasword[1]))) {
                 io.print("new user registered");
             } else if (command.equals("new") && !(auth.createUser(usernameAndPasword[0], usernameAndPasword[1]))) {
+                System.out.println("username already exists");
                 io.print("new user not registered");
             } else if (command.equals("login") && auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
                 io.print("logged in");

@@ -26,7 +26,6 @@ public class AuthenticationService {
 
     public boolean createUser(String username, String password) {
         if (userDao.findByName(username) != null) {
-            System.out.println("username already exists");
             return false;
         }
 
