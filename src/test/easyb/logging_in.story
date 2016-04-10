@@ -53,6 +53,6 @@ scenario "nonexistent user can not login to ", {
     }
 
     then 'user will not be logged in to system', {
-                 io3.getPrints().shouldNotHave("wrong username or password")  
+                 io3.getPrints().shouldHave("wrong username or password")  
     }
 }
