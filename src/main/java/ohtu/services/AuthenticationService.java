@@ -70,6 +70,24 @@ public class AuthenticationService {
     }
 
     private boolean invalid(String username, String password) {
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        System.out.println("rikotaan ehto");
+        
+        
+        
         if (checkForLength(username, password)) {
             return true;
         }
