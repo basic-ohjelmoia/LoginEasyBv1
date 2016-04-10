@@ -1,8 +1,8 @@
 package ohtu;
 
-import ohtu.data_access.InMemoryUserDao;
-import ohtu.data_access.UserDao;
-import ohtu.io.ConsoleIO;
+//import ohtu.data_access.InMemoryUserDao;
+//import ohtu.data_access.UserDao;
+//import ohtu.io.ConsoleIO;
 import ohtu.io.IO;
 import ohtu.services.AuthenticationService;
 import org.springframework.context.ApplicationContext;
