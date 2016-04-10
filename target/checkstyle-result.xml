@@ -15,5 +15,6 @@
 <file name="C:\Users\mikromafia\Documents\GitHub\ohtu2016\viikko3\LoginEasyBv1\src\main\java\ohtu\io\StubIO.java">
 </file>
 <file name="C:\Users\mikromafia\Documents\GitHub\ohtu2016\viikko3\LoginEasyBv1\src\main\java\ohtu\services\AuthenticationService.java">
+<error line="72" column="5" severity="error" message="Metodin pituus on 42 riviÃ¤ (suurin sallittu on 20)." source="com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"/>
 </file>
 </checkstyle>
